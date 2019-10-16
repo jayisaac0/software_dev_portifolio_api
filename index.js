@@ -1,4 +1,6 @@
 const mysql = require('mysql');
+const helmet = require('helmet');
+const compression = require('compression');
 const express = require('express');
 const categories = require('./routes/categories');
 const subcategories = require('./routes/subcategories');
