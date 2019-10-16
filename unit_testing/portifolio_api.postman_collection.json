@@ -1,0 +1,181 @@
+{
+	"info": {
+		"_postman_id": "c7fb02b9-0a4d-4277-a0e6-22ba2a01dfbb",
+		"name": "portifolio_api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:2500/api/categories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"category_title\": \"Other technologies\",\n\t\"category_description\": \"These are technologies that are used alongside day to day projects.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/subcategories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"category_id\": 4,\n\t\"sub_category_title\": \"Google cloud\",\n\t\"sub_category_description\": \"Google Compute Engine, which is an infrastructure-as-a-service (IaaS) offering that provides users with virtual machine instances for workload hosting.\",\n\t\"image_url\": \"https://blog.wepay.com/wp-content/uploads/2014/12/1448970954_google.png\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/subcategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"subcategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/projectcategories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"project_category_title\": \"Repository projects\",\n\t\"project_category_description\": \"These are projects that have been developed and submitted to my github profile repositories and are not live for viewing but repositories and code can be viewed and used by third parties.\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/projectcategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"projectcategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/projectcategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/projectcategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"projectcategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/projectsubcategories",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"project_categories_id\": 1,\n\t\"project_sub_category_title\": \"Node js - SQL restful api with authentication and authorization\",\n\t\"project_sub_category_description\": \"This is a rewrite of the mongo restful service api that makes use of mongo database to make use of the SQL technologies like postgres, sqlite and mysql. The api is a CRUDE system that allows registration of users to the database and has got user login and registrations with two admin authorization channels.\",\n\t\"project_image_url\": \"https://miro.medium.com/max/3840/1*115cqXTggxGeZq5m-yFnrw.png\",\n\t\"project_status\": \"published\",\n\t\"project_live_url\": \"http://localhost:3000/skills\",\n\t\"project_repository\": \"http://localhost:3000/skills\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/projectsubcategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"projectsubcategories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:2500/api/projectsubcategories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:2500/api/projectsubcategories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "2500",
+					"path": [
+						"api",
+						"projectsubcategories"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
