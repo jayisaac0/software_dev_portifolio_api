@@ -6,7 +6,7 @@ const categories = require('./routes/categories');
 const subcategories = require('./routes/subcategories');
 const projectcategories = require('./routes/projectcategories');
 const projectsubcategories = require('./routes/projectsubcategories');
-// const email = require('./routes/email');
+const email = require('./routes/email');
 const cors = require('cors');
 
 require('dotenv').config();
@@ -24,7 +24,7 @@ app.use('/api/categories', categories);
 app.use('/api/subcategories', subcategories);
 app.use('/api/projectcategories', projectcategories);
 app.use('/api/projectsubcategories', projectsubcategories);
-// app.use('/api/email', email);
+app.use('/api/email', email);
 
 app.use(helmet());
 app.use(compression());
